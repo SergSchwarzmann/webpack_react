@@ -1,11 +1,11 @@
-import React, {useState} from "react";
+import * as React from "react";
 
 import "../styles/Header.css";
 
 
 
 function Header(props) {
-    let [count, setNewCount] = useState(0);
+    let [count, setNewCount] = React.useState(0);
 
     const handleClick = e /* event*/ => {
         setNewCount(count + 1);
